@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Poster</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Your Generated Poster</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <img src="{{ url_for('static', filename=image_path) }}" alt="Generated Poster" class="img-fluid mb-3">
+                <a href="{{ url_for('static', filename=image_path) }}" download class="btn btn-primary">Download Poster</a>
+            </div>
+        </div>
+    </div>
+    <!-- Include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
